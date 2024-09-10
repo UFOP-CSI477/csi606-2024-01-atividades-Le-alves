@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas</title>
+    
+    <link rel="stylesheet" href="forms.css">
+
+</head>
+<body>
+
+    <h1>Dados do Cadastro da Pessoa</h1>
+
+    <form method="post" action="validar.html">  <!-- Precisa ser posto dentro desta TAG / Irá encapsular as outras tags que são 
+                                                     necessárias para criar o formulário-->
+
+        <div class="controle">                                            
+            <label for="nome">Nome:</label> <!--Este for está fazendo referencia ao id-->
+            <input type="text" name="nome" id="nome" placeholder="Nome da pessoa">
+        </div>                                            
+        <div>
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Endereço de residência">
+        </div>
+        <div>
+            <label>Gênero:</label>
+            <div>
+                <input 
+                    type="radio" 
+                    name="genero"  --o que força selecionar somente uma opção--
+                    id="feminino" 
+                    value="F">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div>
+                <input 
+                    type="radio" 
+                    name="genero" 
+                    id="masculino" 
+                    value="M">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input 
+                    type="radio" 
+                    name="genero" 
+                    id="naobinario" 
+                    value="NB">
+                <label for="naobinario">Não-Binário</label>
+            </div>
+            <div>
+                <input 
+                type="radio" 
+                name="genero" 
+                id="semresposta" 
+                value="SR">
+                <label for="semresposta">Prefiro não informar</label>
+            </div>
+        </div>
+        <br>
+
+        <label>Notificações</label>
+        <br>
+
+        <div>
+            <input
+                type="checkbox"
+                name = "notificacao[0]"
+                id = "email">
+            <label for = "email">E-mail</label>
+        </div>  
+        
+        <div>
+            <input
+                type="checkbox"
+                name = "notificacao[1]"
+                id = "Whatsapp">
+            <label for = "Whatsapp">Whatsapp</label>
+        </div>
+        
+        <div>
+            <input
+                type="checkbox"
+                name = "notificacao[2]"
+                id = "Telegram">
+            <label for = "Telegram">Telegram</label>
+        </div>
+
+
+        <div>
+            <label for="uf">Estado</label>
+
+            <div>
+                <select name="estado" id="uf">
+                    
+                    <option 
+                        value="-1"
+                        disabled
+                        selected
+                        >Selecione:</option>
+                
+                    <option value="1">Amazonas</option>
+                    <option value="2">Bahia</option>
+                    <option value="3">Minas Gerais</option>
+                    <option value="4">Pará</option>
+                    <option value="5">São Paulo</option>
+    
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label for="perfil">Cor Padrão do perfil </label>
+            <input type="color" name ="perfile"
+            id ="perfil">
+        </div>
+
+        <div>
+            <label for ="nascimento">Data de nascimento</label>
+            <input type="date" name="nascimento" id="nascimento">
+        </div>
+
+        <div>
+            <label for="foto">Foto perfil</label>
+            <input type="file" name="perfil" id="perfil">
+        </div>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <a href="introducao.html">Voltar</a>
+    
+</body>
+</html>

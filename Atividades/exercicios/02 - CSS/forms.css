@@ -1,0 +1,20 @@
+label{
+    font-weight:bolder;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    background-color: #f7f7f7c6;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 75px;
+}
+form > div { /*Aqui ele atua como um filho */
+    padding: 2px;
+    border: 1px solid #d4d4d4d4;
+}
+/*Existe esta forma também, onde podemos definir um nome, modelo e utilizalo em cada parte
+.controle{
+    padding: 25px;
+    border: 5px solid rgba(140, 197, 121, 0.267);
+}*/

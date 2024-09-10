@@ -1,0 +1,40 @@
+table{
+    width: 100%; /* % de quanto a tabela irá ocupar na tela*/
+}
+
+/*Borda da tabela, células do cabeçalho e células de dados*/
+table, th, td{
+    border: 1px solid black;
+    border-collapse:collapse; /*Unir as linhas das células */
+}
+
+th, td {
+    padding: 10px;
+}
+
+th{
+    font-size: 14pt;
+    font-family: Tahoma;
+    font-style: italic;
+}
+
+caption{
+    font-size: 15pt;
+    font-family: Tahoma;
+    font-weight: bolder;
+}
+
+/*Definir pseudoclass para os elementos (Entre linhas de topo, linhas de corpo e rodapé| ou seja, cor aparecera quando passar o mouse*/
+
+thead tr:hover{ /*Estamos definindo que serão as linhas que pertencem ao topo "cabeçalho" da tabela*/
+    background-color: rgb(121, 121, 243);
+}
+
+tbody tr:hover{
+    background-color: #a9a9a9a9;
+}
+
+/*tbody tr: :nth-child(odd){Esse método está referenciando ao enéssimo filho, ou seja, necessita de uma condição
+    background-color: green
+
+} */

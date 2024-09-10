@@ -3,10 +3,10 @@
 
 ## Atualize os seus dados
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
+- Nome: Lê Alves
+- Matrícula: 21.2.8158
+- Curso: Sistemas de Informação
+- Semestre/Ano correntes: 5º semestre / 2024
 - Link para o seu GitHub:
 
 ## [Projeto final:](./Projeto/README.md)
