@@ -1,0 +1,98 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Definição do banco de dados
+datasource db {
+  provider = "sqlite" // ou outro banco de dados, como PostgreSQL
+  url      = env("DATABASE_URL")
+}
+
+// Gerador do Prisma Client
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Tabela tipos_sanguineos
+model TiposSanguineos {
+  id        Int      @id @default(autoincrement()) // Chave primária auto-incrementada
+  tipo      String
+  fator     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relacionamento com Pessoas
+  pessoas   Pessoas[]
+}
+
+// Tabela estados
+model Estados {
+  id        Int      @id @default(autoincrement()) // Chave primária auto-incrementada
+  nome      String
+  sigla     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relacionamento com Cidades
+  cidades   Cidades[]
+}
+
+// Tabela cidades
+model Cidades {
+  id        Int      @id @default(autoincrement()) // Chave primária auto-incrementada
+  nome      String
+  estado    Estados  @relation(fields: [estadoId], references: [id])
+  estadoId  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relacionamento com Pessoas e LocaisColeta
+  pessoas   Pessoas[]
+  locais    LocaisColeta[]
+}
+
+// Tabela pessoas
+model Pessoas {
+  id        Int      @id @default(autoincrement()) // Chave primária auto-incrementada
+  nome      String
+  rua       String
+  numero    String
+  complemento String?
+  rg        String   @unique
+  cidade    Cidades? @relation(fields: [cidadeId], references: [id])
+  cidadeId  Int?
+  tipo      TiposSanguineos @relation(fields: [tipoId], references: [id])
+  tipoId    Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relacionamento com Doações
+  doacoes   Doacoes[]
+}
+
+// Tabela locais_coleta
+model LocaisColeta {
+  id        Int      @id @default(autoincrement()) // Chave primária auto-incrementada
+  nome      String
+  rua       String
+  numero    String
+  complemento String?
+  cidade    Cidades? @relation(fields: [cidadeId], references: [id])
+  cidadeId  Int?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relacionamento com Doações
+  doacoes   Doacoes[]
+}
+
+// Tabela doacoes
+model Doacoes {
+  id        Int      @id @default(autoincrement()) // Chave primária auto-incrementada
+  pessoa    Pessoas  @relation(fields: [pessoaId], references: [id])
+  pessoaId  Int
+  local     LocaisColeta @relation(fields: [localId], references: [id])
+  localId   Int
+  data      DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
