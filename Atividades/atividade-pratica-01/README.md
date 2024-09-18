@@ -39,4 +39,4 @@ Este projeto é uma API RESTful que gerencia o agendamento de doações de sangu
 7. Inicie o servidor em modo de desenvolvimento:npm run dev
 8. Para ver o funcionamento:  npx prisma studio
 
-O servidor estará disponível em http://localhost:3000.
+O servidor estará disponível em http://localhost:5555.
