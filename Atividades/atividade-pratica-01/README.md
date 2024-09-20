@@ -38,5 +38,6 @@ Este projeto é uma API RESTful que gerencia o agendamento de doações de sangu
 6. Gere o cliente Prisma: npx prisma generate
 7. Inicie o servidor em modo de desenvolvimento:npm run dev
 8. Para ver o funcionamento:  npx prisma studio
-
-O servidor estará disponível em http://localhost:5555.
+9. servidor estará disponível em http://localhost:5555.
+10. Para acessar o servidor, executar o seguinte comando: node src/server.js
+11. O servidor começará a rodar na porta 3000
