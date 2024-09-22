@@ -37,7 +37,8 @@ Este projeto é uma API RESTful que gerencia o agendamento de doações de sangu
 5. Crie o banco de dados e execute as migrações: npx prisma migrate dev --name init
 6. Gere o cliente Prisma: npx prisma generate
 7. Inicie o servidor em modo de desenvolvimento:npm run dev
-8. Para ver o funcionamento:  npx prisma studio
-9. servidor estará disponível em http://localhost:5555.
-10. Para acessar o servidor, executar o seguinte comando: node src/server.js
+8. Para ver o funcionamento do seu Banco de dados:  npx prisma studio
+9. servidor do banco de dados estará disponível em http://localhost:5555.
+10. Para acessar o servidor, deve-se executar o seguinte comando: node src/server.js
 11. O servidor começará a rodar na porta 3000
+12. Recomenda-se o uso do Insomnia para teste 
