@@ -4,6 +4,8 @@ const { pessoasRouter } = require('./routes/pessoas.js'); ;
 const { cidadesRouter } = require('./routes/cidades.js');
 const { estadosRouter } = require('./routes/estados.js');
 const { tiposSanguineosRouter } = require('./routes/tipos_sanguineos.js');
+const { locaisColetaRouter } = require('./routes/locais_coleta.js');
+const { doacoesRouter } = require('./routes/doacoes.js');
 
 const server = express();
 const PORT = 3000; // Usamos a porta 3000 para nosso servidor
@@ -23,6 +25,12 @@ server.use('/api', estadosRouter);
 
 //Usa as rotas de tipos Sanguíneos
 server.use('/api', tiposSanguineosRouter);
+
+//Usa as rotas dos locais de coleta
+server.use('/api', locaisColetaRouter);
+
+//Usa as rotas das doações
+server.use('/api', doacoesRouter);
 
 // Rota de teste para garantir que o servidor está rodando
 server.get('/', (request, response) => {
