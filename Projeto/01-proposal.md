@@ -8,27 +8,23 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+  O documento descreve a especificação de requisitos para o desenvolvimento de um sistema de agenda digital de compromissos, com o objetivo de auxiliar os usuários na organização de suas tarefas. O sistema permite que os usuários realizem um CRUD nos compromissos. 
 
-<!-- Apresentar o tema. -->
 ### 1. Tema
 
-  O trabalho final tem como tema o desenvolvimento de ...
+  O trabalho final tem como tema o desenvolvimento de uma Agenda de Compromissos
 
-<!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
+O produto terá todas as funções de um CRUD e notificações quando realizar alguma ação com os compromissos. 
 
-  Este projeto terá as seguintes funcionalidades...
-
-<!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  Neste trabalho não serão considerados ...
+  Neste trabalho não serão considerados Autenticação de Usuário, não será implementado um sistema de autenticação complexo com diferentes níveis de permissão. A aplicação considera um único perfil de usuário.
 
-<!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+  Tera um a pagina principal com botão para criar um compromisso, pesquisar algum compromisso por mês e ano. E uma lista com os compromissos existentes. 
+  Ao clicar em criar um compromisso, um modal será aberto, onde o usuário poderar registrar seu compromisso. Caso ele queija editar, basta clicar no compromisso ja existente, que um modal de edição será aberto. 
 
 ### 5. Referências
 

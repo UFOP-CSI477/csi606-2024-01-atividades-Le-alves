@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Menu = () => {
 
     return( 
@@ -6,8 +8,8 @@ const Menu = () => {
         <div>
             <h2>Aplicação de Doação de Sangue</h2>
             <ul>
-                <li>Home</li>
-                <li>Estado</li>
+                <li><Link to =" /">Home</Link></li>
+                <li><Link to="/estados">Estado</Link></li>
                 <li>Cidade</li>
                 <li>Local de Coleta</li>
                 <li>Tipo sanguineo</li>
