@@ -1,0 +1,128 @@
+/* Estilo padrão do campo de data */
+#data {
+    border: 2px solid #ced4da;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+/* Estilo para campo inválido */
+.is-invalid {
+    border-color: red;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Estilo para campo válido */
+.is-valid {
+    border-color: green;
+    background-color: #d4edda;
+    color: #155724;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Mover o botão de fechar para o lado direito */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Alinhamento dos campos de Título e Data */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espaçamento entre o título e a data */
+}
+
+.modal-header div {
+    flex: 1;
+}
+
+/* Adicionar espaço extra entre o campo de data e a descrição */
+#dataModal {
+    height: 36px; /* Define a altura do campo */
+    padding: 6px 12px; /* Ajuste o padding interno para manter uma boa aparência */
+    font-size: 14px; /* Tamanho de fonte para garantir boa legibilidade */
+    resize: none; /* Evita o redimensionamento do campo */
+} 
+
+#tituloModal {
+    height: 2.4rem;
+    padding: 6px 12px; /* Ajuste o padding interno para manter uma boa aparência */
+    font-size: 14px;
+    resize: none; /* Evita o redimensionamento do campo */
+}
+
+/* Restante dos estilos */
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#salvarBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#cancelarBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+.slide-container {
+  width: 60px;
+  height: 30px;
+  background: #ccc;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider {
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  left: 2px;
+  transition: 0.3s;
+}
+
+.slider.active {
+  left: 32px;
+  background: #4CAF50;
+}
