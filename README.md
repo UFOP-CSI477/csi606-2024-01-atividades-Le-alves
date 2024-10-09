@@ -7,8 +7,11 @@
 - Matrícula: 21.2.8158
 - Curso: Sistemas de Informação
 - Semestre/Ano correntes: 5º semestre / 2024
-- Link para o seu GitHub:
+- Link para o seu GitHub: https://github.com/Le-alves
 
 ## [Projeto final:](./Projeto/README.md)
 
-Apresente uma breve descrição do seu projeto.
+O projeto foi criado para servir como uma Agenda de Compromissos Individual. Onde o usuário consegue realizar o CRUD no seu 
+compromisso e também conseguir acomapnhar todas as alterações por e-mail. 
+
+Para instrução de como executar o código, por favor leia o REDME do arquivo, lá consta um passo a passo. 
