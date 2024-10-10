@@ -8,7 +8,7 @@ const UpdateTipo_Sanguineo = () => {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  // Buscar o tipo sanguíneo pelo ID ao carregar o componente
+ 
   useEffect(() => {
     api.get(`/tipos_sanguineos/${id}`)
       .then(response => {
@@ -32,7 +32,7 @@ const UpdateTipo_Sanguineo = () => {
     try {
       await api.put(`/tipos_sanguineos/${id}`, data);
       alert("Tipo Sanguíneo atualizado com sucesso!");
-      navigate('/tipos_sanguineos');  // Redireciona para a lista de tipos sanguíneos após o sucesso
+      navigate('/tipos_sanguineos');  
     } catch (error) {
       console.error("Erro ao atualizar tipo sanguíneo:", error);
       alert("Erro na atualização do tipo sanguíneo.");
