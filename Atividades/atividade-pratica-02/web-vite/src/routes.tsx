@@ -16,6 +16,11 @@ import ListLocais_Coleta from "./components/locais_coleta/ListLocais_Coleta";
 import CreateLocais_Coleta from "./components/locais_coleta/CreateLocais_Coleta";
 import UpdateLocais_Coleta from "./components/locais_coleta/UpdateLocais_Coleta";
 
+// Componentes de Tipos Sanguíneos
+import ListTipo_Sanguineo from "./components/tipo_sanguineo/ListTipo_Sanguineo";
+import CreateTipo_Sanguineo from "./components/tipo_sanguineo/CreateTipo_Sanguineo";
+import UpdateTipo_Sanguineo from "./components/tipo_sanguineo/UpdateTipo_Sanguineo";
+
 const AppRoutes = () => {
   return (
     <BrowserRouter>
@@ -37,6 +42,11 @@ const AppRoutes = () => {
         <Route path="/locais_coleta" element={<ListLocais_Coleta />} />
         <Route path="/locais_coleta/create" element={<CreateLocais_Coleta />} />
         <Route path="/locais_coleta/update/:id" element={<UpdateLocais_Coleta />} />
+
+        {/* Rotas para Tipos Sanguíneos */}
+        <Route path="/tipo_sanguineo" element={<ListTipo_Sanguineo />} />
+        <Route path="/tipo_sanguineo/create" element={<CreateTipo_Sanguineo />} />
+        <Route path="/tipo_sanguineo/update/:id" element={<UpdateTipo_Sanguineo />} />
       </Routes>
     </BrowserRouter>
   );
