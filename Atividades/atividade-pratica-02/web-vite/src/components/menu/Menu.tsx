@@ -11,7 +11,7 @@ const Menu = () => {
                 <li><Link to ="/">Home</Link></li>
                 <li><Link to="/estados">Estado</Link></li>
                 <li><Link to="/cidades">Cidade</Link></li>
-                <li>Local de Coleta</li>
+                <li><Link to="/locais_coleta">Local de Coleta</Link></li>
                 <li>Tipo sanguineo</li>
                 <li>Pessoa</li>
             </ul>
